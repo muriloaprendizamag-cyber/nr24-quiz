@@ -742,7 +742,7 @@ function renderBoardList(board){
 
 // ══ API: Google Sheets ══
 async function saveScore(entry){
-  if(SCRIPT_URL==="cole_aqui") return; // dev mode
+  if(SCRIPT_URL==="https://script.google.com/macros/s/AKfycbxTDppshEyMLQ3Ymmz8Ba6PzfIOgMD9SR4_QvoZmPgPqrF60r00sJrSwEzkQsDVc21Y/exec") return; // dev mode
   try{
     await fetch(SCRIPT_URL, {
       method:"POST",
@@ -754,7 +754,7 @@ async function saveScore(entry){
 }
 
 async function fetchBoard(){
-  if(SCRIPT_URL==="cole_aqui"){
+  if(SCRIPT_URL==="https://script.google.com/macros/s/AKfycbxTDppshEyMLQ3Ymmz8Ba6PzfIOgMD9SR4_QvoZmPgPqrF60r00sJrSwEzkQsDVc21Y/exec"){
     // modo demo sem backend — retorna vazio
     return [];
   }
